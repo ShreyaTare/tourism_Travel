@@ -33,6 +33,9 @@
 
 	<div class="slideshow-container">
 		<img src="resources/images/slider1.png">
+		<img src="resources/images/slider2.png">
+		<img src="resources/images/slider3.jpg">
+		
 		
 
 		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -58,6 +61,35 @@
 		</div>
 	 </section>
 
+
+	 <script>
+		var slideIndex = 0;
+		showSlides();
+		
+		function showSlides() {
+		  var i;
+		  var slides = document.getElementsByClassName("slideshow-container")[0].getElementsByTagName("img");
+		
+		  for (i = 0; i < slides.length; i++) {
+			slides[i].style.display = "none";
+		  }
+		
+		  slideIndex++;
+		
+		  if (slideIndex > slides.length) {
+			slideIndex = 1;
+		  }
+		
+		  slides[slideIndex - 1].style.display = "block";
+		
+		  setTimeout(showSlides, 2000); // Change slide every 2 seconds
+		}
+		
+		function plusSlides(n) {
+		  slideIndex += n;
+		  showSlides();
+		}
+		</script>
      
 
 

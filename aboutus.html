@@ -33,7 +33,8 @@
 
 	<div class="slideshow-container">
 		<img src="resources/images/slider1.png">
-		
+        <img src="resources/images/slider2.png">
+		<img src="resources/images/slider3.jpg">
 
 		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
   <a class="next" onclick="plusSlides(1)">&#10095;</a>
@@ -58,8 +59,8 @@ Inclusivity: Our company culture and our work is welcoming to all
 Collaboration: We prioritize working relationships and communication
 Partnership: We act on the knowledge that we are stronger together
 Accountability: We work hard, deliver results, and know when to rest
-Purpose</p>
-
+</p>
+<li>Purpose</li>
 <p>Create Innovative Marketing: Promote travel to the entirety of the USA to support the wide variety of communities within and beyond our gateways
 Market the Welcome: Convey a welcoming message and communicate travel policies to facilitate confident, informed visitors
 Build and Maintain Trust: Demonstrate our integrity through inclusion, transparency, and compliance to cultivate trusted relationships with our global community of stakeholders
@@ -92,7 +93,34 @@ LEARN MORE</p>
 	 </section>
 
      
-
+     <script>
+		var slideIndex = 0;
+		showSlides();
+		
+		function showSlides() {
+		  var i;
+		  var slides = document.getElementsByClassName("slideshow-container")[0].getElementsByTagName("img");
+		
+		  for (i = 0; i < slides.length; i++) {
+			slides[i].style.display = "none";
+		  }
+		
+		  slideIndex++;
+		
+		  if (slideIndex > slides.length) {
+			slideIndex = 1;
+		  }
+		
+		  slides[slideIndex - 1].style.display = "block";
+		
+		  setTimeout(showSlides, 2000); // Change slide every 2 seconds
+		}
+		
+		function plusSlides(n) {
+		  slideIndex += n;
+		  showSlides();
+		}
+		</script>
 
 
 

@@ -1,100 +1,76 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>Travel Website</title>
-	
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="resources/css/style.css" rel="stylesheet" type="text/css">
-    
+  <meta charset="UTF-8" />
+  <title>Travel Website </title>
+  <link rel="stylesheet" href="/resources/css/style.css" />
+  <!-- Font Awesome Cdn Link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
 </head>
 <body>
+  <header>
+    <div class="container">
+      <div class="nav_bar">
+        <div class="logo">
+          <i class="fa-solid fa-route"></i>
+          <h4>GO</h4>
+        </div>
 
-	<!--navbar-->
-	<header >
-		<nav>
-			<div class="nav-container">
-			  <div class="logo">
-				<a href="#"><img src="resources/images/logo.jpg"></a>
-			  </div>
-			  <ul class="nav-menu">
-				<a href="#">Home</a>
-				<a href="aboutus.html">AboutUs</a>
-				<a href="package.html">Packages</a>
-				<a href="#contact">Contact</a>
-				<a href="enquiry.html">Enquiry</a>
-				<a href="Wishlist.html">Wishlist</a>
-			  </ul>
-			</div>
-		  </nav>
-		  
+          <div class="menu_list">
+            <a href="#">Home</a>
+            <a href="aboutus.html">aboutus</a>
+            <a href="package.html">packages</a>
+            <a href="#">Services</a>
+            <a href="enquiry.html">Enquiry</a>
+            <a href="#">Contact US</a>
 
-	</header>
+            <button class="lg_btn">Login</button>
+          </div>
+      </div>
+    </div>
+  </header>
 
-	<!-- slider img-->
+  <section class="home_section">
+    <div class="overlay">
+      <div class="container">
+        <div class="home">
+          <h1><span>meet</span> people <br>discover <span>places</span> <br><span>enjoy</span> time</h1>
+          <div class="home_buttons">
+            <button class="btn1">Explore World</button>
+            <button><i class="fas fa-play"></i>Video</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-	<div class="slideshow-container">
-		<img src="resources/images/slider1.jpg">
-		<img src="resources/images/slider2.jpg">
-		<img src="resources/images/slider3.jpg">
-		
-	  </div>
-	<!-- Main content here -->
-     <section>
-		<div class="welcome" >
-         <h1>
-			Welcome to Our Tourism
-		 </h1>
+  <section class="services">
+    <div class="container">
+      <div class="title">
+        <h1>Visit World's best <span>places</span></h1>
+        <span class="slogan">enjoy your trip.</span>
+      </div>
+      <div class="services_boxes">
+        <div class="box">
+          <i class="fa-solid fa-hotel"></i>
+          <h4>Tour Point 1</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, aspernatur.</p>
+        </div>
 
-		 <section>
-			<div class="signup-form">
-				<img src="resources/images/signupimg.jpg">
-				<h2>Your travel journey starts here</h2>
-				<p>Sign up now for travel tips, personalized itineraries, and vacation inspiration straight to your inbox.</p>
-				<form id="signup-form">
-				  <label for="email-input">Email</label>
-				  <input type="email" id="email-input" placeholder="Your email" required>
-				  <button type="submit">Sign up</button>
-				</form>
-			  </div>
-		</section>
-		</div>
+        <div class="box br">
+          <i class="fa-solid fa-plane"></i>
+          <h4>Tour Point 2</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, aspernatur.</p>
+        </div>
 
-		
-
-		<div class="homeinfo">
-			<p>Brand USA maximizes the economic and social benefits of travel
-				to the United States fostering a better understanding between <br> 
-				   people and cultures and creating jobs essential to the U.S. economy.<br>
-				   The Brand USA Board of Directors convenes quarterly and is governed by 11 members appointed by the U.S. Secretary of Commerce in consultation with the Secretary of State and the Secretary of Homeland Security. 
-				   More information about Brand USA board meetings is available by clicking the link above.</p>
-		    <img src="resources/images/shimlapck.jpg" alt="Welcome image">
-	        
-				
-		</div>
-	 </section>
-      
-
-	 
-
-	 <script src="jsfile/index.js"></script>
-     
-
-
-
-
-	 <!--footer-->
-	 <footer id="contact" href="contact">
-
-		<h3>Contact Us</h3>
-			<p>For any inquiries, please reach out to us:</p>
-			<ul>
-				<li>Email: <a href="shreyatare15@gmail.com">shreyatare15@gmail.com</a></li>
-				<li>Phone: <a href="tel:+1234567890">+91 7249320106</a></li>
-	        </ul>
-
-	 </footer>
+        <div class="box">
+          <i class="fa-solid fa-mountain-sun"></i>
+          <h4>Tour Point 3</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, aspernatur.</p>
+        </div>
+      </div>
+  </div>
+  </section>
 
 </body>
 </html>

@@ -9,12 +9,12 @@
         <link href="resources/css/style.css" rel="stylesheet" type="text/css">
     
 </head>
-<body background="resources/images/bodybg.jpg">
+<body>
 	<header >
 		<nav>
 			<div class="nav-container">
                 <div class="logo">
-                  <a href="#"><img src="resources/images/logo1.jpg"></a>
+                  <a href="#"><img src="resources/images/logo.png"></a>
                 </div>
 			  <ul class="nav-menu">
 				<a href="index.html">Home</a>
@@ -22,6 +22,7 @@
 				<a href="package.html">Packages</a>
 				<a href="#contact">Contact</a>
                 <a href="#">Enquiry</a>
+                <a href="Wishlist.html">Wishlist</a>
 			  </ul>
 			</div>
 		  </nav>
@@ -29,6 +30,11 @@
 
 	</header>
 
+
+
+
+
+  
 	
 	<!-- Main content here -->
    <div class="enquriy"> 
@@ -36,7 +42,7 @@
 </div>
     <div class="enquiry-form">
         
-        <form action="submit_enquiry" method="POST">
+      <form action="submit_enquiry" method="POST" class="animated-form">
                  
           <label for="name">Name:</label>
           <input type="text" id="name" name="name" placeholder="Your name" required>
@@ -48,19 +54,20 @@
           <input type="email" id="email" name="email" placeholder="Your email address" required>
     
           <label for="package">Package:</label>
-          <select id="package" name="package" required>
-            <option value="">Select a package</option>
-            <option value="Package 1">Package 1</option>
-            <option value="Package 2">Package 2</option>
-            <option value="Package 3">Package 3</option>
-          </select>
+    <select id="package" name="package" required>
+      <option value="">Select a package</option>
+      <option value="Package 1">Nature</option>
+      <option value="Package 2">Adventure</option>
+      <option value="Package 3">Spiritual</option>
+    </select>
+
+    <label for="price">Price:</label>
+    <input type="text" id="price" name="price" placeholder="Package price" readonly>
     
           <label for="date">Date:</label>
           <input type="date" id="date" name="date" required>
     
-          <label for="time-range">Time Range:</label>
-          <input type="time" id="start-time" name="start-time" required> to
-          <input type="time" id="end-time" name="end-time" required>
+          
     
           <button type="submit">Submit Enquiry</button>
         </form>
@@ -77,8 +84,8 @@
 		<h3>Contact Us</h3>
 			<p>For any inquiries, please reach out to us:</p>
 			<ul>
-				<li>Email: <a href="mailto:contact@example.com">contact@example.com</a></li>
-				<li>Phone: <a href="tel:+1234567890">+1234567890</a></li>
+				<li>Email: <a href="shreyatare15@gmail.com">shreyatare15@gmail.com</a></li>
+				<li>Phone: <a href="tel:+1234567890">+91 7249320106</a></li>
 	        </ul>
 
 	 </footer>

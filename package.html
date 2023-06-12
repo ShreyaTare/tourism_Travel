@@ -9,19 +9,20 @@
         <link href="resources/css/style.css" rel="stylesheet" type="text/css">
     
 </head>
-<body background="resources/images/bodybg.jpg">
+<body>
 	<header >
 		<nav>
 			<div class="nav-container">
                 <div class="logo">
-                  <a href="#"><img src="resources/images/logo1.jpg"></a>
+                  <a href="#"><img src="resources/images/logo.png"></a>
                 </div>
 			  <ul class="nav-menu">
 				<a href="index.html">Home</a>
 				<a href="aboutus.html">AboutUs</a>
 				<a href="#">Packages</a>
 				<a href="#contact">Contact</a>
-                <a href="enquiry.html">Enquiry</a>
+        <a href="enquiry.html">Enquiry</a>
+        <a href="Wishlist.html">Wishlist</a>
 			  </ul>
 			</div>
 		  </nav>
@@ -31,70 +32,194 @@
 
 	
 	<!-- Main content here -->
-    <section>
-        <h2>Lets Go</h2>
-        <p class="view">Check out our latest and greatest Tour Packages!</p>
 
-        <div class="gallery">
-            <div class="item">
-                <img src="resources/images/package1.jpg"
-                    alt="Featured tour 1">
-                <h3>Paris</h3>
-           </div>
-           <div class="item">
-                <img src="resources/images/package1.jpg"
-                alt="Featured tour 1">
-                <h3>Paris</h3>
+        <section>
+          <div class="letsgo">
+            <h1>Welcome
+            </h1>
+            <h2>Lets Go</h2>
+            
+<p class="view">Check out
+     our latest and 
+                greatest
+  Tour Packages!</p>
+           
+          </div>
+            <div id="saved-packages"></div>
+            <div class="wrapper">
+              <div class="packagebutton" class="container">
+                
+                <button class="showpackage" onclick="showNaturePackages()" >Nature</button>
+                <button class="showpackage" onclick="showAdventurePackages()">Adventure</button>
+                <button class="showpackage" onclick="showSpiritualPackages()">Spiritual</button>
+                <button class="showpackage" onclick="showCulturePackages()">Culture & Heritage</button>
+              
+              </div>
+              <!--nature package-->
+              <div class="package-gallery" id="nature-packages" class="container" id="nature-adventure-container" id="nature-adventure-button" style="display: none;">
+               
+                <div class="gallery">
+
+                  <div class="item">
+                    <div class="tour-item">
+                      
+                      <h3>Shimla</h3>
+                      <img src="resources/images/shimlapck.jpg" alt="Featured tour 1">
+                      <p>Shimla is the capital and the largest city of the northern Indian state of Himachal Pradesh.<br>In 1864, Shimla was declared as the summer capital of British</p>
+                      
+                      <span class="like-button" onclick="handleLikeButtonClick(this)">&#x2661;</span>
+                      <button id="buy-button-id" class="buy-button">
+                        <a href="enquiry.html">Buy Package</a>
+                      </button>
+                    </div>
+                    <div class="tour-item">
+                      <h3>janjeahli</h3>
+                      <img src="resources/images/janjeahli.jpg" alt="Featured tour 1">
+                      <p>Janjeahli is the capital and the largest city of the northern Indian state of Himachal Pradesh.<br>In 1864, Shimla was declared as the summer capital of British</p>
+                      <span class="like-button" onclick="handleLikeButtonClick(this)">&#x2661;</span>
+                      <button id="buy-button-id" class="buy-button">
+                        <a href="enquiry.html">Buy Package</a>
+                      </button>
+                    </div>
+                    <div class="tour-item">
+                      <h3>Kasauli</h3>
+                      <img src="resources/images/Kasauli.jpg" alt="Featured tour 1">
+                      <p>Kasauli is the capital and the largest city of the northern Indian state of Himachal Pradesh.<br>In 1864, Shimla was declared as the summer capital of British</p>
+                      <span class="like-button" onclick="handleLikeButtonClick(this)">&#x2661;</span>
+                      <button id="buy-button-id" class="buy-button">
+                        <a href="enquiry.html">Buy Package</a>
+                      </button>
+                    </div>
+                  </div>
+                  <!-- Add more tour items here -->
+                </div>
+              </div>
+
+              <!--adventure package-->
+              <div class="package-gallery" id="adventure-packages" id="nature-adventure-container" id="nature-adventure-button" style="display: none;">
+                <div class="gallery">
+                  <div class="item">
+                    <div class="tour-item">
+                      
+                      <h3>Parasailling</h3>
+                      <img src="resources/images/parasailling.jpg" alt="Featured tour 1">
+                      <p>Shimla is the capital and the largest city of the northern Indian state of Himachal Pradesh.<br>In 1864, Shimla was declared as the summer capital of British</p>
+                      <span class="like-button" onclick="handleLikeButtonClick(this)">&#x2661;</span>
+                      <button id="buy-button-id" class="buy-button">
+                        <a href="enquiry.html">Buy Package</a>
+                      </button>
+                    </div>
+                    <div class="tour-item">
+                      <h3>Trekking</h3>
+                      <img src="resources/images/hills.jpg" alt="Featured tour 1">
+                      <p>Shimla is the capital and the largest city of the northern Indian state of Himachal Pradesh.<br>In 1864, Shimla was declared as the summer capital of British</p>
+                      <span class="like-button" onclick="handleLikeButtonClick(this)">&#x2661;</span>
+                      <button id="buy-button-id" class="buy-button">
+                        <a href="enquiry.html">Buy Package</a>
+                      </button>
+                    </div>
+                    
+                  </div>
+                  <!-- Add more tour items here -->
+                </div>
+              </div>
+
+                <!--spiritual package-->
+                <div class="package-gallery" id="spiritual-packages" id="nature-adventure-container" id="nature-adventure-button" style="display: none;">
+                  <div class="gallery">
+                    <div class="item">
+                      <div class="tour-item">
+                        
+                        <h3>Jakhu Temple</h3>
+                        <img src="resources/images/spiritual1.jpg" alt="Featured tour 1">
+                        <p>Jakhu Temple (also Jakhoo Temple) is an ancient temple in Shimla, Himachal Pradesh, India, dedicated to the Hindu deity Lord Hanuman.[1] It is situated on Jakhu Hill, Shimla's highest peak, 2.5 km (1.6 mi) east of the Ridge at a height of 2,455 m (8,054 ft) above sea level.[2] Each year, a festival is held on Dussehra, before 1972 the festival used to be held at Annadale.[3] Shri Hanuman Jakhu is a statue situated in the temple premises which is one of the tallest in the world.[4]
+
+                          According to the Ramayana, Hanuman stopped at the location to rest while searching for the Sanjivni Booti to revive Lakshmana. A giant 108-feet-high idol of Hanuman was unveiled at Jakhu Hanuman temple on 4 November 2010. At 108 feet (33 m), it surpasses the statue of Christ the Redeemer, which measures at 98 feet (30 m), in Rio de Janeiro, Brazil. The cost of construction was Rs 1.5 crores. The public unveiling was officiated by Abhishek Bachchan.</p>
+                        <span class="like-button" onclick="handleLikeButtonClick(this)">&#x2661;</span>
+                        <button id="buy-button-id" class="buy-button">
+                          <a href="enquiry.html">Buy Package</a>
+                        </button>
+                      </div>
+                      <div class="tour-item">
+                        <h3>Buddha Statue</h3>
+                        <img src="resources/images/spiritual2.jpg" alt="Featured tour 1">
+                        <p>Langza is one of the remotest villages of India in the state of Himachal Pradesh. Close to headquarters of Spiti Valley - Kaza, Langza is a high-altitude village is known for ancient marine fossils, for spotting endangered animals, for the warmth of the people, and for its gigantic Buddha statue overlooking the Spiti Valley. The landscapes of Langza village can leave anyone spellbound. In fact, we rate Langza as the most beautiful village we have visited in Spiti Valley. In Langza, we got a first-hand experience on how people live and co-exist harmoniously with nature. Their way of living is totally in sync with the terrain’s rough geography and unforgiving weather. This blog will serve as a travel guide for you to visit Langza village.</p>
+                        <span class="like-button" onclick="handleLikeButtonClick(this)">&#x2661;</span>
+                        <button id="buy-button-id" class="buy-button">
+                          <a href="enquiry.html">Buy Package</a>
+                        </button>
+                      </div>
+                      <div class="tour-item">
+                        <h3>Tara Devi Temple</h3>
+                        <img src="resources/images/spiritual3.jpg" alt="Featured tour 1">
+                        <p>Tara Devi Temple, situated on the western side of Shimla, boasts of an excellent location with beautiful valleys around the hill. It is one of the most famous sightseeing places in Shimla and has a divine atmosphere that attracts locals as well as a huge crowd of tourists during festive seasons.
+
+                          Surrounded by a mesmerizing view of the lofty mountains, pine forests and lush greenery, the tranquil setting of the temple makes you forget everything about your day-to-day worries of life. Located only 11 km drive away from the city centre, this religious place is not less than a paradise for experience seekers.</p>
+                        <span class="like-button" onclick="handleLikeButtonClick(this)">&#x2661;</span>
+                        <button id="buy-button-id" class="buy-button">
+                          <a href="enquiry.html">Buy Package</a>
+                        </button>
+                      </div>
+                      
+                    </div>
+                    <!-- Add more tour items here -->
+                  </div>
+                </div>
+
+                <!--culture & Heritage-->
+                <div class="package-gallery" id="culture-packages" id="nature-adventure-container" id="nature-adventure-button" style="display: none;">
+                  <div class="gallery">
+                    <div class="item">
+                      <div class="tour-item">
+                        
+                        <h3>culture</h3>
+                        <img src="resources/images/parasailling.jpg" alt="Featured tour 1">
+                        <p>Shimla is the capital and the largest city of the northern Indian state of Himachal Pradesh.<br>In 1864, Shimla was declared as the summer capital of British</p>
+                        <span class="like-button" onclick="handleLikeButtonClick(this)">&#x2661;</span>
+                        <button id="buy-button-id" class="buy-button">
+                          <a href="enquiry.html">Buy Package</a>
+                        </button>
+                      </div>
+                      <div class="tour-item">
+                        <h3>heritage</h3>
+                        <img src="resources/images/hills.jpg" alt="Featured tour 1">
+                        <p>Shimla is the capital and the largest city of the northern Indian state of Himachal Pradesh.<br>In 1864, Shimla was declared as the summer capital of British</p>
+                        <span class="like-button" onclick="handleLikeButtonClick(this)">&#x2661;</span>
+                        <button id="buy-button-id" class="buy-button">
+                          <a href="enquiry.html">Buy Package</a>
+                        </button>
+                        
+                      </div>
+                      
+                    </div>
+                    <!-- Add more tour items here -->
+                  </div>
+                </div>
+
+
+              <div id="wishlist-button">
+                <a href="Wishlist.html">View Wishlist</a>
+              </div>
+
+
             </div>
-            <div class="item">
-                <img src="resources/images/package1.jpg"
-                    alt="Featured tour 1">
-                <h3>Paris</h3>
-           </div>
-           <div class="item">
-            <img src="resources/images/package1.jpg"
-                alt="Featured tour 1">
-            <h3>Paris</h3>
-            </div>
-            <div class="item">
-                <img src="resources/images/package1.jpg"
-                    alt="Featured tour 1">
-                <h3>Paris</h3>
-           </div>
-           <div class="item">
-                <img src="resources/images/package1.jpg"
-                alt="Featured tour 1">
-                <h3>Paris</h3>
-            </div>
-            <div class="item">
-                <img src="resources/images/package1.jpg"
-                    alt="Featured tour 1">
-                <h3>Paris</h3>
-           </div>
-           <div class="item">
-            <img src="resources/images/package1.jpg"
-                alt="Featured tour 1">
-            <h3>Paris</h3>
-            </div>
+          </section>
+          
 
 
 
-        </div>
-
-
-     
-
-
-
-
+          
+        
+        <script src="jsfile/index.js"></script>
+        
 	 <!--footer-->
 	 <footer id="contact" href="contact">
 
 		<h3>Contact Us</h3>
 			<p>For any inquiries, please reach out to us:</p>
 			<ul>
-				<li>Email: <a href="mailto:contact@example.com">contact@example.com</a></li>
-				<li>Phone: <a href="tel:+1234567890">+1234567890</a></li>
+				<li>Email: <a href="shreyatare15@gmail.com">shreyatare15@gmail.com</a></li>
+				<li>Phone: <a href="tel:+1234567890">+91 7249320106</a></li>
 	        </ul>
 
 	 </footer>

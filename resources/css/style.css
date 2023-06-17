@@ -686,7 +686,7 @@ body{
         justify-content: space-between;
         border-style: double;
         border-color: #10e0cf;
-        background-image: url("/resources/images/welcome.jpg");
+        background-image: url(../../resources/images/welcome.jpg);
         background-repeat: no-repeat;
         background-size: cover;
       }

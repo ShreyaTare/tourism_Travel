@@ -27,7 +27,7 @@ body{
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: rgb(123, 251, 255);
+  background-color: rgb(181, 192, 20);
 }
 .logo{
   display: flex;
@@ -44,8 +44,8 @@ body{
 .menu_list a{
   margin: 1.2rem;
   font-size: 14px;
-  color: rgb(82, 79, 79);
-  background-color: rgb(133, 233, 240);
+  color: rgb(0, 81, 255);
+  /*background-color: rgb(133, 233, 240);*/
 }
 .lg_btn{
   margin-left: 2rem;

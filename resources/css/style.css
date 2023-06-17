@@ -11,7 +11,7 @@
 }
 
 body{
-  background-image: url("/resources/images/home.jpg");
+  background-image: url(../../resources/images/home.jpg);
   overflow-x: hidden;
   background-repeat: no-repeat;
   background-size: cover;
@@ -61,7 +61,7 @@ body{
 
 /* Home section style */
 .home_section{
-  background-image: url(./resources/images/home.jpg);
+  background-image: url(../../resources/images/home.jpg);
   background-size: cover;
   
   /*height: 100vh;*/
